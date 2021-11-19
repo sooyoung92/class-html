@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: khaki;
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 'child3 child3';
+            padding: 10px;
+            border: 5px solid #000;
+        }
+
+        .parent div {
+            background-color: lavender;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .child3 {
+            grid-area: child3;
+            grid-row: 1;
+        }
+
+        @media (max-width:777px) {
+            .parent {
+                width: 100%;
+                grid-template-columns: 100%;
+                grid-template-areas: 'child3';
+            }
+
+            .child3 {
+                grid-row: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">Lorem, ipsum dolor.</div>
+        <div class="child2">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="child3">3</div>
+
+    </div>
+</body>
+
+</html>
