@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    
+}
+.gallery{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cat_gallery{
+    width: 1230px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    
+}
+
+.cat_header{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gallery_inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+.gallery_inner img{
+    width: 300px;
+    height: 300px;
+}
+frame_num span{
+    display: block;
+    color: royalblue;
+}
